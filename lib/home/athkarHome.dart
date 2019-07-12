@@ -5,6 +5,8 @@ import 'package:flutter_sadeeqalmuslim/screens/Athkar/sleep.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_sadeeqalmuslim/screens/Athkar/saba7.dart';
 
+import '../screens/Athkar/astgfar.dart';
+
 class AthkarHome extends StatefulWidget {
   @override
   _AthkarHomeState createState() => _AthkarHomeState();
@@ -228,6 +230,37 @@ class _AthkarHomeState extends State<AthkarHome> {
                 SizedBox(
                   height: 1,
                 ),
+                Row(
+                  children: <Widget>[
+                    Expanded(
+                      child: RaisedButton(
+                        onPressed: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) {
+                                return astgfar();
+                              },
+                            ),
+                          );
+                        },
+                        color: Color.fromRGBO(248, 246, 190, 1),
+                        child: Text(
+                          'اذكار الاستغفار',
+                          style: TextStyle(
+                              color: Colors.black,
+                              fontSize: 26,
+                              fontWeight: FontWeight.w600),
+                        ),
+                        padding: EdgeInsets.all(4),
+                      ),
+                    ),
+                  ],
+                ),
+                SizedBox(
+                  height: 1,
+                ),
+
               ],
             ),
           ],
